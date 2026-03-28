@@ -13,7 +13,7 @@ public class HelloWorld3 {
             System.out.println("hii");
             j++;
         }
-        i  += 1;
+        i++;
     }
 }
 }
