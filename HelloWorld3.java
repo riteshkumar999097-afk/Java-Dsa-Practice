@@ -15,5 +15,6 @@ public class HelloWorld3 {
         }
         i++;
     }
+    scanner.close();
 }
 }

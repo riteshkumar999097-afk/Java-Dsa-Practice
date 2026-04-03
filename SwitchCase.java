@@ -33,5 +33,7 @@ public class SwitchCase {
         }
 
         System.out.println("The day is: " + dayName);
+
+        sc.close();
     }
 }
