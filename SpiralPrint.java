@@ -32,23 +32,23 @@ public class SpiralPrint{
         int sRow =0, eRow = mat.length-1, sCol = 0, eCol = mat[0].length - 1;
 
         while(sRow <= eRow && sCol <= eCol){
-// first row 
+// first row left to right
             for(int i = sCol; i<= eCol; i++){
                 System.out.print(mat[sRow][i] +" ");
             }
             sRow++;
-            //end col
+            //end col top to bottom
             for(int j = sRow; j<= eRow; j++){
                 System.out.print(mat[j][eCol] +" " );
             }
             eCol--;
 
-            //last row
+            //last row right to left
             for(int i = eCol; i>= sCol; i--){
                 System.out.print(mat[eRow][i] +" ");
             }
             eRow--;
-            //first col
+            //first col bottom to top
 
              for(int i = eRow; i>= sRow; i--){
                 System.out.print(mat[i][sCol] +" " );
