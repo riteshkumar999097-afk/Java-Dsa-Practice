@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class SumOfArrayRecursively {
 
     //more optimized way to solve this problem is to use the index of the array instead of creating a new array for small problem
@@ -28,8 +29,22 @@ public class SumOfArrayRecursively {
         return smallAns + ans;
 
     }
+
+    public static int[] inputArray(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of the array:");
+        int size = sc.nextInt();
+        int [] arr = new int [size];
+        System.out.println("Enter the elements of the array:");
+        for(int i =0; i< size; i++){
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        return arr;
+    }
+
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5};
+        int [] arr = inputArray();
         System.out.println(sumOfArray(arr));
         System.out.println(sumOfArray_2(arr, 0));
     }
